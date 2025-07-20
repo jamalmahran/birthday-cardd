@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Birthday Card Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Birthday Card Dashboard</h1>
+  <button id="createBtn">Create New Card</button>
+  
+  <!-- Input Box for New Card -->
+  <div id="inputBox" style="display:none; text-align:center; margin:1em;">
+    <input id="inputName" type="text" placeholder="Enter person's name or ID" style="padding:7px; width:200px;">
+    <button id="okBtn">OK</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+  
+  <table id="cardsTable">
+    <thead>
+      <tr>
+        <th>Name/ID</th>
+        <th>Status</th>
+        <th>Link</th>
+        <th>Stream</th>
+      </tr>
+    </thead>
+    <tbody id="cardsBody"></tbody>
+  </table>
+  <div id="cardLog"></div>
+  <script src="renderer.js"></script>
+</body>
+</html>
+
